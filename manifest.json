@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "UTEC No Background",
+  "version": "1.0.0",
+  "description": "Elimina el fondo de la página de inicio de sesión del Sistema Académico de UTEC para una interfaz más limpia.",
+  "author": "araooz",
+  "license": "MPL-2.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "utec-no-background@araooz",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "icons": {
+    "48": "icon.png",
+    "96": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sistema-academico.utec.edu.pe/access"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
