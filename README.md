@@ -7,6 +7,7 @@ Firefox extension that removes the background from the UTEC Academic System logi
 The extension only applies to:
 
 `https://sistema-academico.utec.edu.pe/access`
+`https://conference.utec.edu.pe/access`
 
 It injects a small CSS rule that disables the `.login-page` background image.
 
